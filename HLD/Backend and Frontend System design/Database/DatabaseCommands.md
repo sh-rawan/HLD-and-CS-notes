@@ -97,9 +97,9 @@ SELECT * FROM Topic JOIN Videos ON Topic.VID = VIDEOS.VID WHERE Topic_name="Arra
 6. Missellenious
 
 ```sql
-(SELECT email, height, age FROM users SET email="abc@gmail.com" WHERE height<170)
+(SELECT email, height, age FROM users WHERE height<170)
 UNION / INTERSECT / EXCEPT
-(SELECT email, height, age FROM users SET email="abc@gmail.com" WHERE age>100);
+(SELECT email, height, age FROM users WHERE age>100);
 -- Attributes should always match for both the sets you want to merge.
 
 -- Aggretions on max, min, avg, sum, count
